@@ -1,0 +1,61 @@
+
+/* General */
+:root{
+    --main-gray: #303841;
+    --main-blue: #45567d;
+    --main-red: #be3144;
+    --main-white: #f0f0f0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+/* link */
+.link{
+color: white;
+text-decoration: none;
+}
+
+/* work-block */
+
+.work-block{
+    width: 100%;
+    box-shadow: 0 0 3px 0px rgb(66, 66, 66);
+    cursor: pointer;
+}
+.work-block img{
+    max-width: 100%;
+}
+.work__title-block{
+    background: var(--main-gray);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    
+}
+
+.work__title-block::after{
+    content: " />";
+    color: rgb(228, 89, 89);
+    opacity: 0;
+    transition: all 0.2s;
+}
+.work__title-block::before{
+    content: "< ";
+    color: rgb(228, 89, 89);
+    opacity: 0;
+    transition: all 0.2s;
+}
+.work-block:hover .work__title-block::before,
+.work-block:hover .work__title-block::after {
+    
+    opacity: 1;
+}
+.work__title-block h3{
+    display: inline-block;
+    font-weight: 400;
+}
