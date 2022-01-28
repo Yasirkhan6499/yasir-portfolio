@@ -25,9 +25,14 @@ text-decoration: none;
     width: 100%;
     box-shadow: 0 0 3px 0px rgb(66, 66, 66);
     cursor: pointer;
+    scale: 1.1;
+    
+    
 }
+
 .work-block img{
     max-width: 100%;
+   
 }
 .work__title-block{
     background: var(--main-gray);
@@ -58,4 +63,30 @@ text-decoration: none;
 .work__title-block h3{
     display: inline-block;
     font-weight: 400;
+}
+
+
+/*  projects-block  */
+.projects-container{
+    background: var(--main-blue);
+    padding: 5rem 2rem 10rem;
+}
+.project-heading{
+    text-align: center;
+    font-size: 4rem;
+    border-bottom: 2px solid white;
+    max-width: 640px;
+    color: var(--main-white);
+    margin: 0 auto 5rem;
+    padding-bottom: 1rem;
+    
+}
+.projects-block{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 4rem;
+   max-width: 1280px;
+   margin: auto;
+  
+    
 }
