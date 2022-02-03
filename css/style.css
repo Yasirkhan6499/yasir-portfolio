@@ -165,7 +165,11 @@ transition: all 0.2s;
    left: 1rem;
    top: 2.1rem;
 }
-
+/* Block */
+.block{
+    text-align: center;
+    height: 100vh;
+}
 /* About Block */
 
 .about-block{
@@ -173,8 +177,7 @@ transition: all 0.2s;
     flex-direction: column;
     justify-content: center;
     background-color: var(--main-gray);
-    text-align: center;
-    height: 100vh;
+
    
 }
 .about-block h1{
@@ -190,4 +193,36 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 font-style: italic;
 font-weight: 100;
 margin-top: 1rem;
+}
+
+.contact-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--main-gray);
+    color: white;
+    
+}
+.contact-block h2{
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+.contact-block p{
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+}
+.contact-block__list{
+    display: flex;
+    justify-content: center;
+    padding-left: 0rem;
+    max-width: 980px;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+}
+.contact-block__list a{
+    font-size: 2.1rem;
+    padding: 1rem 2rem
 }
