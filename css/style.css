@@ -25,9 +25,12 @@ text-decoration: none;
     width: 100%;
     box-shadow: 0 0 3px 0px rgb(66, 66, 66);
     cursor: pointer;
-    scale: 1.1;
+    transform: scale(1);
+    transition: all 0.3s;
     
-    
+}
+.work-block:hover{
+    transform: scale(1.1);
 }
 
 .work-block img{
