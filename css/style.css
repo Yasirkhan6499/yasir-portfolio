@@ -195,16 +195,23 @@ font-weight: 100;
 margin-top: 1rem;
 }
 
+/*-----------Contact Block -------*/
+
 .contact-block{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: var(--main-gray);
     color: white;
+    text-align: center;
+    height: 100vh;
+  
     
+   
 }
 .contact-block h2{
-    font-size: 5rem;
+    font-size: 6.6rem;
     margin-bottom: 0;
 }
 .contact-block p{
@@ -224,5 +231,26 @@ margin-top: 1rem;
 }
 .contact-block__list a{
     font-size: 2.1rem;
-    padding: 1rem 2rem
+    padding: 1rem 2rem;
+    transition: transform 0.3s;
+    text-shadow: 0 0 5px black;
+}
+.contact-block__list a:hover{
+    transform: translateY(6px);
+}
+.contact-block__list i{
+ color: white;
+ fill: white;
+ margin-right: 0.7rem;
+}
+/* Footer */
+.footer p{
+ position: absolute;
+ display: inline-block;
+ width: 100%;
+ left: 0px;
+ color: white;
+ bottom: 1rem;
+ border-top: solid 4px var(--main-red);
+ padding: 3rem 0 0;
 }
