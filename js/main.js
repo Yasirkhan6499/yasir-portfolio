@@ -89,10 +89,10 @@ function menuNameChange(target_sec){
 //-------when a menu link is clicked show that name at the top of menu
 menu_links.forEach(link=>{
   link.addEventListener("click",()=>{
+    console.log("clicked");
   menu.prepend(link);
   });
 });
 
 } 
 
- 
